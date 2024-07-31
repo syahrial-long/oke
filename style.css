@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;500;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --main-color: #1bdaca;
+  /* (--) strip 2 adalah untuk membuat varialbel */
+}
+
+html,
+body,
+* 
+/* (*) bintang berfungsi untuk edit semua syntax */ {
+  font-family: "Kanit", sans-serif;
+}
+
+.my-nav {
+  background-color: #000000;
+  height: 70px;
+  font-size: 18px;
+}
+/* fungsi (.) titik untuk memanggil class */
+
+.my-nav {
+  background-color: #000000; /* Warna latar belakang navbar */
+  height: 70px; /* Tinggi navbar */
+  font-size: 18px; /* Ukuran font di navbar */
+}
+/* fungsi (.) titik untuk memanggil class */
+
+.navbar-brand {
+  font-size: 2.5em; /* Ukuran font untuk brand di navbar */
+  font-weight: 800; /* Ketebalan font untuk brand */
+  letter-spacing: 3px; /* Jarak antar huruf untuk brand */
+}
+
+.title {
+  font-size: 2em; /* Ukuran font untuk judul utama */
+  font-weight: 800; /* Ketebalan font untuk judul utama */
+  letter-spacing: 5px; /* Jarak antar huruf untuk judul utama */
+  color: #e40e0e; /* Warna font untuk judul utama */
+}
+
+.description {
+  font-size: 2em; /* Ukuran font untuk deskripsi */
+  font-weight: 100; /* Ketebalan font untuk deskripsi */
+  letter-spacing: 2px; /* Jarak antar huruf untuk deskripsi */
+  color: #ffffff; /* Warna font untuk deskripsi */
+}
+
+.mybg {
+  background-image: url("assets/bg.jpg"); /* Gambar latar belakang */
+  background-position: center; /* Posisi gambar latar belakang di tengah */
+  background-repeat: no-repeat; /* Gambar latar belakang tidak diulang */
+  background-size: cover; /* Gambar latar belakang menutupi seluruh area */
+  height: 600px; /* Tinggi area latar belakang */
+}
+
+.subtitle {
+  font-weight: 500; /* Ketebalan font untuk subjudul */
+  color: var(--main-color); /* Warna font untuk subjudul */
+  font-size: 2em; /* Ukuran font untuk subjudul */
+  letter-spacing: 4px; /* Jarak antar huruf untuk subjudul */
+  line-height: 1; /* Jarak antar baris untuk subjudul */
+}
+
+.subdescription {
+  color: #ffffff; /* Warna font untuk deskripsi tambahan */
+  font-weight: 100; /* Ketebalan font untuk deskripsi tambahan */
+  font-size: 1em; /* Ukuran font untuk deskripsi tambahan */
+  letter-spacing: 2px; /* Jarak antar huruf untuk deskripsi tambahan */
+}
+
+/* showoff content */
+.showoff-content p {
+  color: black; /* Warna font untuk paragraf di showoff content */
+}
+
+/* FOOTER  */
+
+.footer {
+  font-family: "poppins", sans-serif; /* Jenis font untuk footer */
+  background-color: #321034; /* Warna latar belakang footer */
+  padding: 70px 0px; /* Padding vertikal di footer */
+  font-weight: 400; /* Ketebalan font di footer */
+}
+
+.footer .container {
+  max-width: 1570px; /* Lebar maksimum container di footer */
+  margin: auto; /* Menyelaraskan container secara horizontal */
+}
+
+.footer .container .row .footer-col {
+  flex: 1 1 20%; /* Mengatur lebar setiap kolom di footer menjadi 20% dari container */
+  padding: 0px; /* Padding di dalam setiap kolom footer */
+  box-sizing: border-box; /* Memastikan padding tidak menambah ukuran kolom */
+}
+
+.footer ul {
+  list-style: none; /* Menghapus bullet points dari list */
+}
+
+.footer-col h4 {
+  padding: 0 35px; /* Padding horizontal di heading kolom footer */
+  display: flex; /* Mengatur heading kolom menjadi flex container */
+  text-wrap: wrap; /* Membungkus teks dalam heading kolom */
+  font-size: 18px; /* Ukuran font untuk heading kolom */
+  color: #ffffff; /* Warna font untuk heading kolom */
+  text-transform: capitalize; /* Mengubah pertama huruf setiap kata menjadi kapital */
+  margin-bottom: 50px; /* Margin bawah untuk heading kolom */
+  font-weight: 500; /* Ketebalan font untuk heading kolom */
+  position: relative; /* Mengatur posisi relative untuk pseudo-elemen */
+  box-sizing: border-box; /* Memastikan padding tidak menambah ukuran kolom */
+}
+
+.footer-col h4::before {
+  content: ""; /* Konten kosong untuk pseudo-elemen */
+  position: absolute; /* Posisi absolute untuk pseudo-elemen */
+  right: auto; /* Mengatur posisi kanan pseudo-elemen secara otomatis */
+  bottom: -10px; /* Jarak dari bawah untuk pseudo-elemen */
+  background-color: #2bdc28; /* Warna latar belakang pseudo-elemen */
+  height: 4px; /* Tinggi pseudo-elemen */
+  box-sizing: border-box; /* Memastikan ukuran pseudo-elemen tidak terpengaruh padding */
+  width: 50px; /* Lebar pseudo-elemen */
+}
+
+.footer ul li:not(:last-child) {
+  margin-bottom: 10px; /* Margin bawah untuk setiap item list kecuali item terakhir */
+}
+
+.footer-col ul li a {
+  font-size: 16px; /* Ukuran font untuk link di footer */
+  text-transform: capitalize; /* Mengubah pertama huruf setiap kata menjadi kapital */
+  color: #ffffff; /* Warna font untuk link di footer */
+  text-decoration: none; /* Menghapus garis bawah dari link */
+  color: #bbbbbb; /* Warna font default untuk link */
+  display: block; /* Menjadikan link sebagai elemen block */
+  transition: all 0.5s ease; /* Efek transisi saat hover pada link */
+}
+
+.footer ul li a:hover {
+  color: #ffffff; /* Warna font saat hover pada link */
+  padding-left: 15px; /* Padding kiri tambahan saat hover pada link */
+}
+
+.footer-col .social-link a {
+  display: inline-block; /* Menjadikan link sebagai elemen inline-block */
+  height: 40px; /* Tinggi ikon sosial */
+  width: 40px; /* Lebar ikon sosial */
+  background-color: rgba(255, 255, 255, 0.2);
+
+  /* Warna latar belakang ikon sosial dengan transparansi */
+  margin: 0px 10px 10px 0px; /* Margin sekitar ikon sosial */
+  text-align: center; /* Menyelaraskan teks di tengah ikon sosial */
+  line-height: 40px; /* Jarak antar baris di tengah ikon sosial */
+  border-radius: 50%; /* Membuat ikon sosial berbentuk lingkaran */
+  color: #c4bdb3; /* Warna font untuk ikon sosial */
+  transition: all 0.9s ease; /* Efek transisi saat hover pada ikon sosial */
+}
+
+.footer-col .social-link a:hover {
+  color: #24262b; /* Warna font saat hover pada ikon sosial */
+  background-color: #ffffff; /* Warna latar belakang ikon sosial saat hover */
+}
+
+.content {
+  background-color: #4e6833; /* Warna latar belakang konten */
+  padding-top: 30px; /* Padding atas untuk konten */
+}
+
+.copyright {
+  color: #ffffff; /* Warna font untuk teks copyright */
+  text-align: center; /* Menyelaraskan teks di tengah */
+  margin-top: 50px; /* Margin atas untuk teks copyright */
+  margin-bottom: 20px; /* Margin bawah untuk teks copyright */
+  margin-right: 50px; /* Margin kanan untuk teks copyright */
+  width: 100%;
+}
+
+.footer-col .info {
+  position: relative; /* Mengatur posisi relative untuk informasi di footer */
+}
+
+.footer-col .info li {
+  display: flex; /* Mengatur item list menjadi flex container */
+  margin-top: 10px; /* Margin atas untuk item list */
+  margin-bottom: 12px; /* Margin bawah untuk item list */
+}
+
+.footer-col .info li span:nth-child(1) {
+  color: #ffffff; /* Warna font untuk span pertama di item list */
+  font-size: 20px; /* Ukuran font untuk span pertama di item list */
+  margin-right: 10px; /* Margin kanan untuk span pertama di item list */
+}
+.footer-col .info li span:nth-child(2) {
+  color: #ffffff; /* Warna font untuk span pertama di item list */
+  font-size: 20px; /* Ukuran font untuk span pertama di item list */
+  margin-right: 10px; /* Margin kanan untuk span pertama di item list */
+  font-size: 18px;
+}
